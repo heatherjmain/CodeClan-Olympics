@@ -1,6 +1,7 @@
 package com.example.heather.codeclanolympics;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by heather on 15/09/2017.
@@ -27,7 +28,14 @@ public class Competition implements Events {
         competitors.add(competitor);
     }
 
-    public void awardMedal() {
 
+    public ArrayList<Competitor> sortComeptitorsByScore() {
+        Collections.sort(competitors);
+        return competitors;
+    }
+
+
+    public void awardMedal() {
+        
     }
 }

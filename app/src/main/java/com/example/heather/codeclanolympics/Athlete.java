@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Athlete extends Competitor {
 
-    public Athlete(String country, SportType sport) {
-        super(country, sport);
+    public Athlete(String country) {
+        super(country);
     }
 }

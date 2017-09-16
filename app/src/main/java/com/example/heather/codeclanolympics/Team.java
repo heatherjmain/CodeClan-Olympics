@@ -6,7 +6,7 @@ package com.example.heather.codeclanolympics;
 
 public class Team extends Competitor {
 
-    public Team(String country, SportType sport) {
-        super(country, sport);
+    public Team(String country) {
+        super(country);
     }
 }

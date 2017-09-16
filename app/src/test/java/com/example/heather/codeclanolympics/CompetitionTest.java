@@ -10,7 +10,9 @@ import static org.junit.Assert.*;
 public class CompetitionTest {
     Competition competition;
     Team team;
-    Athlete athlete;
+    Athlete athlete1;
+    Athlete athlete2;
+    Athlete athlete3;
 
 
     @Test
@@ -30,19 +32,44 @@ public class CompetitionTest {
     public void canAddCompetitior() {
 //        arrange
         competition = new Competition(SportType.RUNNING);
-        team = new Team("Norway", SportType.ROWING);
-        athlete = new Athlete("Scotland", SportType.RUNNING);
+        team = new Team("Norway");
+        athlete1 = new Athlete("Scotland");
 
 //        act
         competition.addCompetitor(team);
-        competition.addCompetitor(athlete);
-        
+        competition.addCompetitor(athlete1);
+
 //        assert
         assertEquals( 2, competition.getCompetitors().size()  );
         assertEquals( "Norway", competition.getCompetitors().get(0).getCountry()  );
         assertEquals( "Scotland", competition.getCompetitors().get(1).getCountry()  );
+    }
+
+    @Test
+    public void canSortCompetitorsByScore() {
+//        arrange
+        competition = new Competition(SportType.RUNNING);
+
+        athlete1 = new Athlete("Scotland");
+        athlete2 = new Athlete("USA");
+        athlete3 = new Athlete("France");
+
+        athlete1.increaseScore(10);
+        athlete2.increaseScore(100);
+        athlete3.increaseScore(1);
+
+        competition.addCompetitor(athlete1);
+        competition.addCompetitor(athlete2);
+        competition.addCompetitor(athlete3);
+
+//        act
+        competition.sortComeptitorsByScore();
+
+//        assert
+        assertEquals( "USA", competition.getCompetitors().get(0).getCountry() );
+        assertEquals( "Scotland", competition.getCompetitors().get(1).getCountry() );
+        assertEquals( "France", competition.getCompetitors().get(2).getCountry() );
 
 
     }
-
 }
