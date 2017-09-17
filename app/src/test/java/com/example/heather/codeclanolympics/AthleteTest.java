@@ -1,5 +1,7 @@
 package com.example.heather.codeclanolympics;
 
+import com.example.heather.codeclanolympics.AllCompetitors.Athlete;
+
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

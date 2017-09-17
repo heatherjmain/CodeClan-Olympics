@@ -1,5 +1,7 @@
 package com.example.heather.codeclanolympics;
 
+import com.example.heather.codeclanolympics.AllCompetitors.Team;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;

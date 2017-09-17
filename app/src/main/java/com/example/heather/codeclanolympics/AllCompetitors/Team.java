@@ -1,4 +1,6 @@
-package com.example.heather.codeclanolympics;
+package com.example.heather.codeclanolympics.AllCompetitors;
+
+import com.example.heather.codeclanolympics.AllCompetitors.Competitor;
 
 /**
  * Created by heather on 15/09/2017.

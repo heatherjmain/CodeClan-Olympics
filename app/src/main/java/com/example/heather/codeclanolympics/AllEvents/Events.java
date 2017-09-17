@@ -1,4 +1,6 @@
-package com.example.heather.codeclanolympics;
+package com.example.heather.codeclanolympics.AllEvents;
+
+import com.example.heather.codeclanolympics.AllCompetitors.Competitor;
 
 import java.util.ArrayList;
 
@@ -7,6 +9,8 @@ import java.util.ArrayList;
  */
 
 public interface Events {
+
+    void addCompetitor(Competitor competitor);
 
     ArrayList<Competitor> sortComeptitorsByScore();
 

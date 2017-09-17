@@ -1,9 +1,9 @@
-package com.example.heather.codeclanolympics;
+package com.example.heather.codeclanolympics.AllCompetitors;
 
 import android.annotation.TargetApi;
 import android.support.annotation.NonNull;
 
-import java.util.Collections;
+import com.example.heather.codeclanolympics.MedalType;
 
 /**
  * Created by heather on 15/09/2017.

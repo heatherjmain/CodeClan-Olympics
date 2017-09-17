@@ -1,6 +1,4 @@
-package com.example.heather.codeclanolympics;
-
-import java.util.ArrayList;
+package com.example.heather.codeclanolympics.AllCompetitors;
 
 /**
  * Created by heather on 15/09/2017.

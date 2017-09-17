@@ -1,4 +1,8 @@
-package com.example.heather.codeclanolympics;
+package com.example.heather.codeclanolympics.AllEvents;
+
+import com.example.heather.codeclanolympics.AllCompetitors.Competitor;
+import com.example.heather.codeclanolympics.MedalType;
+import com.example.heather.codeclanolympics.SportType;
 
 import java.util.ArrayList;
 import java.util.Collections;

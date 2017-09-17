@@ -1,5 +1,9 @@
 package com.example.heather.codeclanolympics;
 
+import com.example.heather.codeclanolympics.AllCompetitors.Athlete;
+import com.example.heather.codeclanolympics.AllCompetitors.Team;
+import com.example.heather.codeclanolympics.AllEvents.Competition;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
