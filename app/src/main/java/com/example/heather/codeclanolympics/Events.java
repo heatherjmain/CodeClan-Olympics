@@ -10,5 +10,5 @@ public interface Events {
 
     ArrayList<Competitor> sortComeptitorsByScore();
 
-    void awardMedal();
+    void awardMedals();
 }

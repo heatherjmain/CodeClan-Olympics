@@ -10,10 +10,12 @@ import java.util.Collections;
 public class Competition implements Events {
     private SportType sport;
     private ArrayList<Competitor> competitors;
+    private int maxNumberOfCompetitors;
 
-    public Competition(SportType sport) {
+    public Competition(SportType sport, int maxNumberOfCompetitors) {
         this.sport = sport;
         this.competitors = new ArrayList<>();
+        this.maxNumberOfCompetitors = maxNumberOfCompetitors;
     }
 
     public SportType getSport() {
@@ -24,8 +26,14 @@ public class Competition implements Events {
         return competitors;
     }
 
+    public int getMaxNumberOfCompetitors() {
+        return maxNumberOfCompetitors;
+    }
+
     public void addCompetitor(Competitor competitor) {
-        competitors.add(competitor);
+        if(competitors.size() < maxNumberOfCompetitors) {
+            competitors.add(competitor);
+        }
     }
 
 
@@ -35,7 +43,9 @@ public class Competition implements Events {
     }
 
 
-    public void awardMedal() {
-        
-    }
+    public void awardMedals() {
+        competitors.get(0).receiveMedal( MedalType.GOLD );
+        competitors.get(1).receiveMedal( MedalType.SILVER );
+        competitors.get(2).receiveMedal( MedalType.BRONZE );
+   }
 }

@@ -9,7 +9,7 @@ import java.util.Collections;
  * Created by heather on 15/09/2017.
  */
 
-public class Competitor implements Comparable<Competitor> {
+public abstract class Competitor implements Comparable<Competitor> {
     private String country;
 //    private SportType sport;
 //    private ArrayList<MedalType> medals;
