@@ -21,7 +21,7 @@ public abstract class Competitor implements Comparable<Competitor> {
     public Competitor(String country) {
         this.country = country;
 //        this.sport = sport;
-//        this.medals= new ArrayList<>();
+//        this.medals = new ArrayList<>();
         this.score = 0;
         this.goldMedals = 0;
         this.silverMedals = 0;
@@ -74,7 +74,7 @@ public abstract class Competitor implements Comparable<Competitor> {
         }
     }
 
-    @Override
+
     @TargetApi(19)
     public int compareTo(@NonNull Competitor competitor) {
 //        if (this.score < competitor.score) {
